@@ -1,0 +1,30 @@
+{
+    "IR_AND": {
+        "plutus_representation": "(\\x y -> x && y)",
+        "description": "Logical AND"
+    },
+    "IR_OR": {
+        "plutus_representation": "(\\x y -> x || y)",
+        "description": "Logical OR"
+    },
+    "IR_NOT": {
+        "plutus_representation": "(\\x -> not x)",
+        "description": "Logical NOT"
+    },
+    "IR_XOR": {
+        "plutus_representation": "(\\x y -> (x || y) && not (x && y))",
+        "description": "Logical XOR"
+    },
+    "IR_XIC": {
+        "plutus_representation": "(\\x -> x)",
+        "description": "Examine If Closed"
+    },
+    "IR_XIO": {
+        "plutus_representation": "(\\x -> not x)",
+        "description": "Examine If Open"
+    },
+    "IR_OTE": {
+        "plutus_representation": "(\\x -> x)",
+        "description": "Output Energize"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "IR_CTU": {
+        "plutus_representation": "(\\ct preset enable -> if enable then min (ct + 1) preset else ct)",
+        "description": "Count Up Counter"
+    },
+    "IR_CTD": {
+        "plutus_representation": "(\\ct preset enable -> if enable then max (ct - 1) 0 else ct)",
+        "description": "Count Down Counter"
+    },
+    "IR_CTUD": {
+        "plutus_representation": "(\\ct up down preset -> if up then min (ct + 1) preset else if down then max (ct - 1) 0 else ct)",
+        "description": "Up/Down Counter"
+    },
+    "IR_RES": {
+        "plutus_representation": "(\\ct -> 0)",
+        "description": "Reset Counter"
+    }
+}

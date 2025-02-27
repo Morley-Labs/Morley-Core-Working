@@ -1,0 +1,34 @@
+{
+    "IR_ADD": {
+        "plutus_representation": "(\\x y -> x + y)",
+        "description": "Integer Addition"
+    },
+    "IR_SUB": {
+        "plutus_representation": "(\\x y -> x - y)",
+        "description": "Integer Subtraction"
+    },
+    "IR_MUL": {
+        "plutus_representation": "(\\x y -> x * y)",
+        "description": "Integer Multiplication"
+    },
+    "IR_DIV": {
+        "plutus_representation": "(\\x y -> div x y)",
+        "description": "Integer Division"
+    },
+    "IR_MOD": {
+        "plutus_representation": "(\\x y -> mod x y)",
+        "description": "Modulo Operation"
+    },
+    "IR_NEG": {
+        "plutus_representation": "(\\x -> -x)",
+        "description": "Negation"
+    },
+    "IR_ABS": {
+        "plutus_representation": "(\\x -> abs x)",
+        "description": "Absolute Value"
+    },
+    "IR_POW": {
+        "plutus_representation": "(\\x y -> x ^ y)",
+        "description": "Power Operation"
+    }
+}

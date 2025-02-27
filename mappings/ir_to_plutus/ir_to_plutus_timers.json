@@ -1,0 +1,22 @@
+{
+    "IR_TON": {
+        "plutus_representation": "(\\t preset enable -> if enable then min (t + 1) preset else 0)",
+        "description": "On-Delay Timer"
+    },
+    "IR_TOF": {
+        "plutus_representation": "(\\t preset enable -> if enable then preset else max (t - 1) 0)",
+        "description": "Off-Delay Timer"
+    },
+    "IR_TP": {
+        "plutus_representation": "(\\t preset enable -> if enable && t == 0 then preset else max (t - 1) 0)",
+        "description": "Pulse Timer"
+    },
+    "IR_RTO": {
+        "plutus_representation": "(\\t preset enable hold -> if hold then t else if enable then min (t + 1) preset else t)",
+        "description": "Retentive On-Delay Timer"
+    },
+    "IR_RES": {
+        "plutus_representation": "(\\t -> 0)",
+        "description": "Reset Timer"
+    }
+}
